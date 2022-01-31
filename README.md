@@ -5,14 +5,34 @@
 [PostCSS]: https://github.com/postcss/postcss
 
 ```css
-.foo {
   /* Input example */
+.foo {
+  line-height-crop: 1.2 1.8;
 }
 ```
 
 ```css
-.foo {
   /* Output example */
+.foo {
+}
+.foo {
+  padding: 0.1pt;
+}
+
+.foo::before,
+.foo::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.foo::before {
+  margin-top: -0.1em;
+}
+
+.foo::after {
+  margin-bottom: -0.4em;
 }
 ```
 
