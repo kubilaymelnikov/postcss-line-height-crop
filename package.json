@@ -1,6 +1,6 @@
 {
   "name": "postcss-line-height-crop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PostCSS plugin to crop line-height from text. So that designs can be realized even more accurately.",
   "keywords": ["postcss", "css", "postcss-plugin", "postcss-line-height-crop"],
   "scripts": {

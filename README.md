@@ -7,7 +7,7 @@
 ```css
   /* Input example */
 .foo {
-  line-height-crop: 1.2 1.8;
+  line-height-crop: 12 18;
 }
 ```
 
@@ -28,11 +28,11 @@
 }
 
 .foo::before {
-  margin-top: -0.1em;
+  margin-top: -0.06em;
 }
 
 .foo::after {
-  margin-bottom: -0.4em;
+  margin-bottom: -0.09em;
 }
 ```
 

@@ -6,7 +6,7 @@ module.exports = () => {
     postcssPlugin: "postcss-line-height-crop",
     Declaration: {
       "line-height-crop": (decl) => {
-        const round = (_) => Math.round(_ * 10) / 10;
+        const round = (_) => Math.round(_ * 100) / 100;
 
         const selector = decl.parent.selector;
         const values = decl.value
@@ -28,11 +28,11 @@ module.exports = () => {
           }
 
           ${selector}::before {
-            margin-top: ${round((1 - values[0]) * 0.5)}em;
+            margin-top: ${round(values[0] * -0.005)}em;
           }
 
           ${selector}::after {
-            margin-bottom: ${round((1 - values[1]) * 0.5)}em;
+            margin-bottom: ${round(values[1] * -0.005)}em;
           }
         `);
 
